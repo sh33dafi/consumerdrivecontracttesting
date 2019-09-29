@@ -1,0 +1,23 @@
+{
+  "name": "todo-service",
+  "version": "1.0.0",
+  "description": "A simple service for todo items",
+  "main": "src/index.js",
+  "repository": "https://github.com/sh33dafi/consumerdrivecontracttesting",
+  "author": "Yannick Houbrix",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --timeout 10000 --exit tests/**/*.pact.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.1.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.0"
+  }
+}
