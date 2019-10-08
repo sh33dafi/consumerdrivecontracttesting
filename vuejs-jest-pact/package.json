@@ -16,8 +16,7 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@pact-foundation/pact": "^9.1.1",
-    "@pact-foundation/pact-node": "^9.0.4",
+    "@pact-foundation/pact": "8.2.6",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-plugin-unit-jest": "^3.11.0",
