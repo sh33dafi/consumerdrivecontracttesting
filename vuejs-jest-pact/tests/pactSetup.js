@@ -1,7 +1,7 @@
 const path = require("path")
 const Pact = require("@pact-foundation/pact").Pact
 
-global.port = 8991
+global.port = 8991;
 global.provider = new Pact({
     port: global.port,
     log: path.resolve(process.cwd(), "logs", "mockserver-integration.log"),
@@ -10,4 +10,4 @@ global.provider = new Pact({
     pactfileWriteMode: "update",
     consumer: "Awesome Vue.js Todo app",
     provider: "Todo MicroService",
-})
+});

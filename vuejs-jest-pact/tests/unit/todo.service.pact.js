@@ -19,15 +19,12 @@ describe("Todo service", () => {
                 uponReceiving: "A request to retrieve all todos",
                 withRequest: {
                     method: "GET",
-                    path: "/todos",
-                    headers: {
-                        Accept: "application/json",
-                    },
+                    path: "/todos"
                 },
                 willRespondWith: {
                     status: 200,
                     headers: {
-                        "Content-Type": "application/json",
+                        "Content-Type": "application/json; charset=utf-8",
                     },
                     body: EXPECTED_BODY,
                 },
@@ -41,7 +38,7 @@ describe("Todo service", () => {
                 port,
             })
                 .then(response => {
-                    expect(response.headers["content-type"]).toEqual("application/json");
+                    expect(response.headers["content-type"]).toEqual("application/json; charset=utf-8");
                     expect(response.data).toEqual(EXPECTED_BODY);
                     expect(response.status).toEqual(200);
                 })
